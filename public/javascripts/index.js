@@ -64,7 +64,7 @@ function getDescription(data) {
     if (data.description !== '') {
         return data.description;
     } else {
-        return "Engin lýsing til staðar.";
+        return "Engin lýsing til staðar";
     }
 }
 
@@ -100,7 +100,6 @@ function ChannelSelection() {
             'type': 'GET',
             'dataType': 'json',
             'success': function(response) {
-                // Setja gögn í cache
                 $this[0].ajaxHtml= response.results;
                 setupSchedule(response.results);
             }

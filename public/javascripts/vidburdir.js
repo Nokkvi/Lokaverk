@@ -65,13 +65,11 @@ function setupHandball(data) {
 
 function assembleContentHTMLFootball(home, away, date, time, tournament) {
 
-    return "<tr data-toggle='collapse' data-target='#" +  + "'><td>" + date + "</td><td>" + time + "</td><td>" + home + "</td><td>" + away + "</td><td>" + tournament + "</td></tr>";
 
 }
 
 function assembleContentHTMLHandball(teams, date, time, tournament, venue) {
 
-    return "<tr data-toggle='collapse' data-target='#" +  + "'><td>" + date + "</td><td>" + time + "</td><td>" + teams + "</td><td>" + venue + "</td><td>" + tournament + "</td></tr>";
 
 }
 

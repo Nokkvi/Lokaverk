@@ -85,8 +85,13 @@ function ChannelSelection() {
 
         var $this = $(this);
         if (typeof this.ajaxHtml !== 'undefined') {
-            setupFootball(this.ajaxHtml);
-            return;
+            if($(this).text() == 'Fótbolti'){
+                setupFootball(this.ajaxHtml);
+                return;
+            }else{
+                setupHandball(this.ajaxHtml);
+                return;
+            }
         }
 
         $.ajax({

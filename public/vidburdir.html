@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sjónvarpsvísir</title>
+    <title>Íþróttaviðburðir</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -18,7 +18,7 @@
 <div class="container">
     <div class="row">
         <div class="header">
-            <h1>Sjónvarpsvísir</h1>
+            <h1>Íþróttaviðburðir</h1>
             <p>Dagskráin í dag:</p>
         </div>
     </div>
@@ -27,20 +27,15 @@
             <div class="panel-heading">
                 <div id="channel-selection" class="btn-group">
                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Velja stöð <span class="caret"></span>
+                        Velja Íþrótt <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu">
-                        <li id="ruv"><a>RÚV</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li id="stod2"><a>Stöð 2</a></li>
-                        <li id="stod2sport"><a>Stöð 2 Sport</a></li>
-                        <li id="stod2sport2"><a>Stöð 2 Sport 2</a></li>
-                        <li id="stod2bio"><a>Stöð 2 Bíó</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li id="stod3"><a>Stöð 3</a></li>
+                        <li id="football"><a>Fótbolti</a></li>
+                        <li id="handball"><a>Handbolti</a></li>
+
                     </ul>
                 </div>
-                <p id="current-channel">RÚV</p>
+                <p id="current-channel">Fótbolti</p>
             </div>
             <table class="table table-hover">
                 <thead>
@@ -63,6 +58,6 @@
 </div>
 <script src="/javascripts/jquery.min.js"></script>
 <script src="/javascripts/bootstrap.min.js"></script>
-<script src="/javascripts/index.js"></script>
+<script src="/javascripts/vidburdir.js"></script>
 </body>
 </html>

@@ -8,13 +8,11 @@ app.set('views', __dirname+'/public');
 
 
 app.get('/', function(request, response) {
-    response.render('about');
-    console.log('Express er vesen')
+    response.render(__dirname + '/public/'+'index.html');
 });
 
 app.get('/vidburdir', function(request, response) {
-    response.render('index');
-    console.log('Svo mikið vesen')
+    response.sendFile(__dirname + '/public/'+'vidburdir.html');
 });
 
 

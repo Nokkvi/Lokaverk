@@ -44,16 +44,15 @@ function setupConcerts(data) {
         var dateOfShow = current.dateOfShow;
         var userGroupName = current.userGroupName;
         var eventHallName = current.eventHallName;
-        var imageSource = current.imageSource;
-        var content = assembleContentHTMLConcert(eventDateName, name, dateOfShow, userGroupName, eventHallName, imageSource);
+        var content = assembleContentHTMLConcert(eventDateName, name, dateOfShow, userGroupName, eventHallName);
         $(".table tbody").append(content);
     }
 }
 
 
-function assembleContentHTMLConcert(eventDateName, name, dateOfShow, userGroupName, eventHallName, imageSource) {
+function assembleContentHTMLConcert(eventDateName, name, dateOfShow, userGroupName, eventHallName) {
 
-    return "<tr data-toggle='collapse' data-target='#" + eventDateName + "'><td>" + name + "</td><td>" + dateOfShow + "</td><td>" + userGroupName + "</td><td>" + eventHallName + "</td><td>" + imageSource + "</td></tr>";
+    return "<tr data-toggle='collapse' data-target='#" + eventDateName + "'><td>" + name + "</td><td>" + dateOfShow + "</td><td>" + userGroupName + "</td><td>" + eventHallName + "</td></tr>";
 
 }
 

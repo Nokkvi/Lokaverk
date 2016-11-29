@@ -67,11 +67,15 @@ function assembleContentHTMLFootball(home, away, date, time, tournament) {
 
     return "<tr data-toggle='collapse' data-target='#"+ date +"'><td>" + date + "</td><td>" + time + "</td><td>" + home + "</td><td>" + away + "</td><td>" + tournament + "</td></tr>";
 
+    return "<tr data-toggle='collapse' data-target='#" + home + "'><td>" + away + "</td><td>" + date + "</td><td>" + time + "</td><td>" + tournament + "</td></tr>";
+
 }
 
 function assembleContentHTMLHandball(teams, date, time, tournament, venue) {
 
     return "<tr data-toggle='collapse' data-target='#"+ date +"'><td>" + date + "</td><td>" + time + "</td><td>" + teams + "</td><td>" + venue + "</td><td>" + tournament + "</td></tr>";
+
+    return "<tr data-toggle='collapse' data-target='#" + teams + "'><td>" + date + "</td><td>" + time + "</td><td>" + tournament + "</td><td>" + venue + "</td></tr>";
 
 }
 

@@ -15,6 +15,10 @@ app.get('/vidburdir', function(request, response) {
     response.sendFile(__dirname + '/public/'+'vidburdir.html');
 });
 
+app.get('/tonleikar', function(request, response) {
+    response.sendFile(__dirname + '/public/'+'tonleikar.html');
+});
+
 
 app.listen(app.get('port'), function() {
     console.log('Node is running on port: ', app.get('port'));

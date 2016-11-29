@@ -1,7 +1,7 @@
 
 $( document ).ready(function() {
     $.ajax({
-        'url': 'http://apis.is/sports/football',
+        'url': 'https://apis.is/sports/football',
         'type': 'GET',
         'dataType': 'json',
         'ifModified': true,
@@ -99,7 +99,7 @@ function ChannelSelection() {
         }
 
         $.ajax({
-            'url': 'http://apis.is/sports/' + $(this).attr('id'),
+            'url': 'https://apis.is/sports/' + $(this).attr('id'),
             'type': 'GET',
             'dataType': 'json',
             'success': function(response) {

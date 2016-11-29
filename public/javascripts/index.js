@@ -1,7 +1,7 @@
 
 $( document ).ready(function() {
     $.ajax({
-        'url': 'http://apis.is/tv/ruv',
+        'url': 'https://apis.is/tv/ruv',
         'type': 'GET',
         'dataType': 'json',
         'ifModified': true,
@@ -96,7 +96,7 @@ function ChannelSelection() {
         }
 
         $.ajax({
-            'url': 'http://apis.is/tv/' + $(this).attr('id'),
+            'url': 'https://apis.is/tv/' + $(this).attr('id'),
             'type': 'GET',
             'dataType': 'json',
             'success': function(response) {
